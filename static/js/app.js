@@ -29,7 +29,9 @@ legend += '<h2>In ' + year +', 2,744,248 people died of all causes out of a tota
     width: 1200,
     };
   
-  Plotly.newPlot('plot', piedata, layout2);
+  Plotly.newPlot('plot', piedata, layout);
+
+
 
   var x = [58335, 38748, 34673, 6610, 6507, 3786, 2803, 1678, 1385, 1292,
     1292, 982, 902, 801, 610, 495, 311, 152, 12];
@@ -55,8 +57,7 @@ orientation: "h"}];
 // TODO: add #s on right (see screenshot)
 // : format #s on click w commas?
 
-var layout2 = {showlegend: false,
-title: "Unintentional Injury Details, for 161,374 people who died in the US in 2016",
+var layout2 = {showlegend: false, title: "Unintentional Injury Details, for 161,374 people who died in the US in 2016",
 xaxis: { title: "*Number of people in the 1000s (k) dying from Unintentional Injuries",
 hoverformat: 'd',
 },
@@ -73,7 +74,7 @@ height: 800,
 // width: 1200
 };
 
-Plotly.newPlot('plot2', data, layout);
+Plotly.newPlot('plot2', data, layout2);
 
 function init(){
     setMainText('2016');
