@@ -73,7 +73,7 @@ height: 800,
 // width: 1200
 };
 
-Plotly.newPlot('plot2', data, layout);
+Plotly.newPlot('plot2', data, layout2);
 
 function init(){
     setMainText('2016');
