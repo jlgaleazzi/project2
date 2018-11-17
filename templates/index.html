@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Death Pie Chart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+            <div id="mainText">
+                
+            </div>
+          </div>
+        </div>
+            <div class="row">
+                <div class="col-md-2">
+                  <div class="well">
+                    <h5>SELECT YEAR:</h5>
+                    <select id="selDataset" onchange="optionChanged(this.value)">
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                    </select>
+                  </div>
+                </div>
+            </div>   
+            <div class="row">
+                <div id="plot"></div>
+                <div id="plot2"></div>
+            </div>
+            <h3>Source: Centers for Disease Control & Prevention:</h3>
+            <h4>https://webappa.cdc.gov/cgi-bin/broker.exe</h4>
+           
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
