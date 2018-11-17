@@ -57,7 +57,7 @@ orientation: "h"}];
 
 var layout2 = {showlegend: false,
 title: "Unintentional Injury Details, for 161,374 people who died in the US in 2016",
-xaxis: { title: "Number of people in the 1000s (k) dying from Unintentional Injuries",
+xaxis: { title: "*Number of people in the 1000s (k) dying from Unintentional Injuries",
 hoverformat: 'd',
 },
 yaxis: { title: "19 Leading Causes"},
