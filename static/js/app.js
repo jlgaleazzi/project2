@@ -29,7 +29,7 @@ legend += '<h2>In ' + year +', 2,744,248 people died of all causes out of a tota
     width: 1200,
     };
   
-  Plotly.newPlot('plot', piedata, layout);
+  Plotly.newPlot('plot', piedata, layout2);
 
   var x = [58335, 38748, 34673, 6610, 6507, 3786, 2803, 1678, 1385, 1292,
     1292, 982, 902, 801, 610, 495, 311, 152, 12];
@@ -73,7 +73,7 @@ height: 800,
 // width: 1200
 };
 
-Plotly.newPlot('plot2', data, layout2);
+Plotly.newPlot('plot2', data, layout);
 
 function init(){
     setMainText('2016');
